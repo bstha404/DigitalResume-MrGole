@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+:root{
+    --mainTextColo-light:#000;
+    --secondaryTextColor-light:rgb(68, 68, 68);
+    --mainLinkColor-light:#046bd2;
+    --mainBorderColor-light:rgb(157, 157, 157);
+    --mainBgColor-light:rgb(255, 255, 255);
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#d0d0d0;
+    --mainLinkColor-dark:rgb(5, 182, 209);
+    --mainBorderColor-dark:#6d6d6d;
+    --mainBgColor-dark:#131415;
+
+    --mainTextColor:var(--mainTextColor-light);
+    --secondaryTextColor:var(--secondaryTextColor-light);
+    --mainLinkColor:var(--mainLinkColor-light);
+    --mainBorderColor:var(--mainBorderColor-light);
+    --mainBgColor:var(--mainBgColor-light);
+
+}
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}   
+
+body{
+    background-color: var(--mainBgColor);            
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#user-name{
+    font-size: 48px;
+    line-height: 1em;
+}
+
+#bio, a{
+    font-weight: 300;
+}
+
+#profile-pic{
+    border-radius: 25%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#socials--list{
+    column-gap: 1em;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#socials--list a{
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.1s;
+}
+
+
+#socials--list a:hover{
+    font-weight: 500;
+    color: var(--mainLinkColor);
+    font-size: 1em;
+}
+
+#moreaboutme--list{
+    list-style-type: square;
+}
+
+#education--list{
+    list-style-type: square;
+}
+
+
+
+
+#wrapper--techstack__items{
+    display: flex;
+    font-size: 0.9em;  
+    flex-wrap: wrap;
+    gap: 1em; 
+}
+
+.card--techstack{
+    padding: 0.5em 1em;
+    border: 1px solid var(--mainBorderColor);
+    border-width: 2px;
+    border-radius: 6px;
+    align-items: center;
+    
+}
+
+.card--techstack{
+    padding: 0.5em 1em;
+    border: 1px solid var(--mainBorderColor);
+    border-width: 2px;
+    border-radius: 6px;
+}
+
+#project--list{
+    list-style-type: square;
+}
+
+#inthob--list{
+    list-style-type: square;
+}
