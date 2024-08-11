@@ -148,3 +148,61 @@ li{
 #inthob--list{
     list-style-type: square;
 }
+
+
+/* ----------responsive----------- */
+@media (max-width: 768px) {
+    #wrapper--hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 0em;
+    }
+
+    #profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+
+    #user-name {
+        font-size: 46px;
+        /* gap: 10em; */
+    }
+
+    #bio, a{
+        font-weight: 300;
+    }
+
+    #socials--list {
+        /* justify-content: center; */
+        justify-content:space-around;
+        gap: 1em;
+    }
+}
+
+/* @media (max-width: 480px) {
+    #container--main {
+        padding: 0.5em;
+    }
+
+    #profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    #user-name {
+        font-size: 28px;
+    }
+
+    .section--page {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    #wrapper--techstack__items {
+        gap: 0.5em;
+    }
+
+    .card--techstack {
+        padding: 0.3em 0.5em;
+    }
+} */
